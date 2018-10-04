@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <a href="index.html">Home</a>
+
+    <br><br>
+
+    <form action="datos.php" method="post">
+      <label for="nombreDelUsuario">Nombre:</label>
+      <span>*</span>
+      <input type="text" id="nombreDelUsuario" placeholder="Ingrese su nombre" name="userName">
+
+      <br><br>
+
+      <label>Edad:</label>
+      <input type="number" name="userAge">
+
+      <br><br>
+
+      <label>Teléfono:</label>
+      <input type="tel" name="userTel">
+
+      <br><br>
+
+      <label>Email:</label>
+      <input type="email" required name="userEmail">
+
+      <br><br>
+
+      <label>Sitio web:</label>
+      <input type="url" name="userSite">
+
+      <br><br>
+
+      <label>Contraseña:</label>
+      <input type="password" name="userPass">
+
+      <br><br>
+
+      <label>Subir archivo:</label>
+      <input type="file" name="userFile">
+
+      <br><br>
+
+      <label>Género</label>
+      <input type="radio" name="userGender" value="m">Masculino
+      <input type="radio" name="userGender" value="f">Femenino
+
+      <br><br>
+
+      <label>Pasatiempos</label>
+      <input type="checkbox" name="userHobbies[]" value="pasear">Pasear
+      <input type="checkbox" name="userHobbies[]" value="tennis">Jugar al tennis
+      <input type="checkbox" name="userHobbies[]" value="mate">Tomar mate
+
+      <br><br>
+
+      <label>País de origen</label>
+      <select name="userNationality">
+        <option>Seleccione un país</option>
+        <option>Argentina</option>
+        <option>Brasil</option>
+        <option>Chile</option>
+        <option>Colombia</option>
+      </select>
+
+      <br><br>
+
+      <label>Comentarios:</label>
+      <textarea name="userComment"></textarea>
+
+      <br><br>
+
+      <button type="reset">Borrar todo</button>
+
+      <button type="button">No hace nada</button>
+
+      <button type="submit">Registrate</button>
+
+
+    </form>
+
+  </body>
+</html>

@@ -1,0 +1,74 @@
+.header {
+  background-color: #2C3E50;
+}
+
+span {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-weight: bold;
+}
+
+.title {
+  margin-top: 5px;
+}
+
+.dropdown {
+  margin: 0 0 10px 15px;
+}
+
+.intro {
+  background-color: #18BC9C;
+}
+
+img {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  color: white;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.images {
+  background-color: white;
+}
+
+.blackTitle {
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+.about {
+  background-color: #18BC9C;
+}
+
+.about h1{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.about p {
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+.btn {
+  border-color: white;
+  color: white;
+}
