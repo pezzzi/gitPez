@@ -1,0 +1,12 @@
+1) a) SELECT * FROM movies WHERE release_date > '1999-10-01' AND release_date <= '2004-12-31' ORDER BY release_date DESC
+b) SELECT * FROM movies WHERE length > 45 AND length < 150 ORDER BY length
+d) SELECT * FROM movies WHERE title LIKE 'T%' ORDER BY rating
+e) SELECT * FROM movies WHERE title LIKE 'T%%C'
+f) SELECT * FROM movies WHERE year(release_date)=2000 ORDER BY title
+g) SELECT * FROM movies WHERE title LIKE '%-%' ORDER BY title
+h) SELECT * FROM movies WHERE year(release_date) = 1999 OR release_date LIKE '%-10-%' ORDER BY year(release_date), title DESC
+i) SELECT * FROM actors WHERE first_name LIKE 'J____Y' ORDER BY first_name
+j) SELECT * FROM actors WHERE first_name LIKE '%AM' ORDER BY last_name ASC, first_name ASC
+k) SELECT * FROM movies WHERE title LIKE '% Y %' AND title LIKE '%LA%' ORDER BY title
+l) SELECT * FROM actors WHERE (last_name LIKE '%DE%' OR last_name LIKE '%ll%') AND first_name LIKE '%A%' ORDER BY last_name
+m) SELECT * FROM movies WHERE (title LIKE 'Toy Story%' OR title LIKE 'Harry Potter%') AND length = 120 ORDER BY title ASC, length DESC

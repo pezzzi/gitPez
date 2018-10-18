@@ -1,0 +1,51 @@
+* {
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('../images/bg-body.png');
+}
+
+.container {
+  padding: 20px;
+}
+
+.card {
+  justify-content: center;
+  padding: 20px;
+  background-color: white;
+}
+
+ul {
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  list-style: none;
+
+}
+
+.card-image img {
+  align-self: center;
+  border-radius: 50%;
+  width: 100%;
+}
+
+h2 {
+  margin: 5px auto;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+.verMas {
+  padding: 5px;
+  background-color: #c7c7c7;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  color: white;
+}
