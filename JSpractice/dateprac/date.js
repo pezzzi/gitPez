@@ -33,6 +33,13 @@ var p = document.createElement('p');
 container.append(p);
 p.innerText = dia + ' ' + fecha.getDate() + ' de ' + mes + ' de ' + fecha.getFullYear();
 
+var daysRemaining = function() {
+    var oneDay = 24*60*60*1000;
+    var navidad = new Date(2018, 11, 24);
+    var hoy = new Date();
+    return Math.round(Math.abs((hoy.getTime() - navidad.getTime())/(oneDay)));
+}
 
+console.log(daysRemaining());
 
 }
