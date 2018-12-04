@@ -13,4 +13,13 @@ class MoviesController extends Controller
 
       return view('movies.movie')->with('movie', $movie)->with('genre', $genre)->with('actors', $actors);
     }
+
+    public function save(Request $request) {
+
+      $this->validate($request, [
+        'title' => 'required|alpha_num|max:100|unique',
+        'rating' => 'required|between:00.0,10.0|numeric',
+        'awards' => 'required|numeric',
+      ]);
+    }
 }

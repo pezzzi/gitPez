@@ -36,6 +36,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/newActor', 'ActorsController@index');
+
+Route::post('/newActor', 'ActorsController@save');
+
 Route::get('/actors/search', 'ActorsController@search');
 
 Route::get('/actors/{id}', 'ActorsController@show');
@@ -47,3 +51,5 @@ Route::get('/genres/{id}', 'GenresController@show');
 Route::get('/movie/{id}', 'MoviesController@showGenre');
 
 Route::get('/newMovie', 'GenresController@index');
+
+Route::post('/newMovie', 'MoviesController@save');
