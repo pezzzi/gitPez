@@ -53,3 +53,7 @@ Route::get('/movie/{id}', 'MoviesController@showGenre');
 Route::get('/newMovie', 'GenresController@index');
 
 Route::post('/newMovie', 'MoviesController@save');
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
